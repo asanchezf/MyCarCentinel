@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:card_view="http://schemas.android.com/tools"
+              android:padding="1dp"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    >
+
+
+<android.support.v7.widget.CardView
+    android:id="@+id/carviewUltimasPosiciones"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    app:cardBackgroundColor="@android:color/black"
+    card_view:cardUseCompatPadding="true"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imagenUsuario_ult"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imagenUsuario_ult"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/imagenUsuario_ult"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/serie1_new"
+            />
+
+
+        <TextView
+            android:id="@+id/txtNombre_ult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imagenUsuario_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:text="Nombre"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/FechaHora_ult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNombre_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:text="FechaHora"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            />
+
+        <TextView
+            android:id="@+id/Longitud_ult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FechaHora_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:text="Longitud"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/Latitud_ult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Longitud_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:text="Latitud"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/Localizacion_ult"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Latitud_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:text="Localizacion"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/Velocidad_ult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Localizacion_ult"
+            android:layout_toEndOf="@+id/imagenUsuario_ult"
+            android:layout_toRightOf="@+id/imagenUsuario_ult"
+            android:text="Velocidad"
+            android:textColor="@android:color/white"/>
+
+
+        <TextView
+            android:id="@+id/txtubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgVerUbicacion"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="4dp"
+            android:gravity="right"
+            android:text="Ubicación"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imgVerUbicacion"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtNombre_ult"
+            android:layout_marginEnd="59dp"
+            app:srcCompat="@drawable/placeholder_gris"/>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+</LinearLayout>

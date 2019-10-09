@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_24dp"
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom"
+
+
+        />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:enabled="true"
+        android:icon="@drawable/ic_directions_car_black_24dp"
+        android:title="@string/title_dashboard"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:enabled="true"
+        android:icon="@drawable/ic_language_black_24dp"
+        android:title="@string/title_notifications"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/navigation_mapa_todas"
+        android:enabled="true"
+        android:icon="@drawable/ic_pin_drop_black_24dp"
+        android:title="@string/mapa"
+        app:showAsAction="ifRoom"/>
+
+</menu>
